@@ -5,4 +5,4 @@ hello to move use arrow
 
 
 
-* [labyrinthe](https://rui-da-silva-lopes.github.io/rui_da_silva_lopes_AFRAME_labyrinthe/)
+* [labyrinthe](https://rui-da-silva-lopes.github.io))
