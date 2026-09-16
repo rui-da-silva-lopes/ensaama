@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+ 
+   <a-assets>
+      <a-asset-item id="stone" src="./assets/3Dmodels/3Dmodels/drosden-stone-st-vigeans/St%20Vigeans.obj"></a-asset-item>
+   
+     <img id="texture-mur" src="./assets/images/mur.jpg">
+
+</a-assets>
+
+
+
+
+
+      <a-plane id="sol"     material="src: #texture-mur; repeat: 2 2" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="yellow"></a-plane>
+<a-entity id="mur-droit" geometry="" material="src: #texture-mur; repeat: 2 2" position="1.987 0.829 -3.998" scale="0.02 1.68 4.01"></a-entity>
+<a-entity id="mur-gauche" geometry="" material="src: #texture-mur; repeat: 2 2" position="-1.99 0.829 -3.998" scale="0.02 1.68 4.01"></a-entity>
+<a-entity id="mur-haut" geometry="" material="src: #texture-mur; repeat: 2 2" position="-0.452 0.829 -2.017" scale="0.02 1.68 3.08" rotation="0 90 0"></a-entity>
+<a-entity id="mur-bas" geometry="" material="src: #texture-mur; repeat: 2 2" position="0.451 0.829 -5.987" scale="0.02 1.68 3.08" rotation="0 90 0"></a-entity>
+<a-entity id="cloison-gauche" geometry="" material="src: #texture-mur; repeat: 2 2" position="-0.45 0.829 -4.658" scale="0.02 1.68 3.08" rotation="0 90 0"></a-entity>
+<a-entity id="cloison-droite" geometry="" material="src: #texture-mur; repeat: 2 2" position="1.006 0.829 -3.815" scale="0.02 1.68 1.740" rotation="0 180 0"></a-entity>
+
+
+<a-entity id="cloison-mini1" geometry=""  material="src: #texture-mur; repeat: 2 2" position="0.168 0.829 -2.939" scale="0.02 1.68 1.647" rotation="0 89.83978227651309 0"></a-entity>
+<a-entity id="cloison-mini2" geometry="" material="src: #texture-mur; repeat: 2 2" position="-0.677 0.829 -3.486" scale="0.02 1.68 1.067" rotation="0 -0.2291831180523293 0"></a-entity>
+<a-entity id="cloison-mini3" geometry="" material="src: #texture-mur; repeat: 2 2" position="-0.093 0.829 -3.988" scale="0.02 1.68 1.067" rotation="0 -89.66789493797383 0"></a-entity>
+
+<a-entity id="camera-joueur" camera="" position="1.834 0.984 2.355" wasd-controls="" rotation="-10.427831871380986 44.34693334312543 0" look-controls="">
+</a-entity>" aframe-injected=""></a-entity>
+      <img id="sky" src="./assets/images/sky.webp" > 
+   
+     <a-entity
+    id="pierre"
+    obj-model="obj: #stone"
+    position="-0.581 0.608 -0.146"
+      rotation="-61.647 -4.157 0"
+    scale="0.100 0.100 0.100">
+    
+  </a-entity>
+   
+   
+      <a-sky src="#sky"></a-sky>   
+    </a-scene>
+  </body>
+</html>
