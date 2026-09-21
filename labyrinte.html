@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  </head>
+  <body>
+<a-scene fog="type: exponential;  color: #18202B; density: 0.90">
+ 
+  <a-assets>
+     <img id="texture-mur" src="./assets/images/mur.jpg">
+     <img id="sky" src="./assets/images/sky.webp" > 
+  </a-assets>
+
+      
+   
+
+<a-sky src="#sky" material="fog: false"></a-sky>
+
+  </html>
+  
+  
+    <a-plane id="sol"     material="src: #texture-mur; repeat: 2 2" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="yellow"></a-plane>
+  
+    <a-entity id="mur-droit" geometry="" material="src: #texture-mur; repeat: 2 2"      position="1.987 0.829 -3.998"    scale="0.02 1.7 4.01"></a-entity>
+    <a-entity id="mur-gauche" geometry="" material="src: #texture-mur; repeat: 2 2"     position="-1.99 0.829 -3.998"   scale="0.02 1.7 4.01"></a-entity>
+    <a-entity id="mur-haut" geometry="" material="src: #texture-mur; repeat: 2 2"       position="-0.452 0.829 -2.017"    scale="0.02 1.7 3.08" rotation="0 90 0"></a-entity>
+    <a-entity id="mur-bas" geometry="" material="src: #texture-mur; repeat: 2 2"        position="0.451 0.829 -5.216"      scale="0.02 1.7 3.08" rotation="0 90 0"></a-entity>
+    <a-entity id="cloison-gauche" geometry="" material="src: #texture-mur; repeat: 2 2" position="-0.45 0.8 -4.6"   scale="0.02 1.7 3.08" rotation="0 90 0"></a-entity>
+    <a-entity id="cloison-droite" geometry="" material="src: #texture-mur; repeat: 2 2" position="1.092 0.8 -3.716" scale="0.02 1.7 1.781" rotation="0 180 0"></a-entity>
+    
+    <a-entity id="mur-bas-2" geometry="" material="repeat: 2 2; src: #texture-mur" position="-1.129 0.829 -5.632"     scale="0.02 1.7 1.7"        rotation="0 90 0"></a-entity>
+    <a-entity id="mur-bas-3" geometry="" material="repeat: 2 2; src: #texture-mur" position="0.206 0.829 -6.001"      scale="-0.031 -1.72 -3.6"  rotation="0 90 0"></a-entity>
+    <a-entity id="bas-2"     geometry="" material="repeat: 2 2; src: #texture-mur" position="0.074 0.829 -5.413"      scale="0.02 1.7 0.394"        rotation="0 0.9 0"></a-entity>
+    <a-entity id="bas-3"     geometry="" material="repeat: 2 2; src: #texture-mur" position="0.671 0.829 -5.834"      scale="0.02 1.7 0.371"        rotation="0 0.9 0"></a-entity>
+    <a-entity id="bas-4"     geometry="" material="repeat: 2 2; src: #texture-mur" position="1.143 0.81 -5.638"       scale="0.02 1.7 0.975"        rotation="0 90 0"></a-entity>
+    
+    <a-entity id="cloison-mini1" geometry=""  material="src: #texture-mur; repeat: 2 2"     position=" 0.2 0.82 -2.845"             scale="0.02 1.7 1.8"       rotation="0 89.83978227651309 0"></a-entity>
+    <a-entity id="cloison-mini3" geometry="" material="src: #texture-mur; repeat: 2 2"      position="-0.107 0.818 -4.037"          scale="0.02 1.7 1.164"      rotation="0 -89.66789493797383 0"></a-entity>
+    <a-entity id="cloison-mini2" geometry="" material="src: #texture-mur; repeat: 2 2"      position="-0.687 0.829 -3.445"          scale="0.02 1.7 1.2"       rotation="0 -0.2291831180523293 0"></a-entity>
+  
+  
+  
+    
+  
+  
+    
+  <a-entity
+  id="camera-joueur"
+  camera
+  position="1.2 1 -2"
+  rotation="-10.427831871380986 44.34693334312543 0"
+  wasd-controls="acceleration: 5"
+  look-controls>
+</a-entity>
+     
+  
+     
+     
+  
+  
+        
+  
+      </a-scene>
+    </body>
