@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low-Poly Statue
+* source:	https://sketchfab.com/3d-models/low-poly-statue-5e7b33ada6534c95a9bc3144e86daa5c
+* author:	Nikita Borovkov (https://sketchfab.com/NickBorovik)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low-Poly Statue" (https://sketchfab.com/3d-models/low-poly-statue-5e7b33ada6534c95a9bc3144e86daa5c) by Nikita Borovkov (https://sketchfab.com/NickBorovik) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
