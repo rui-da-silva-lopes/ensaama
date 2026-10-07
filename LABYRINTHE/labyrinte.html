@@ -1,6 +1,7 @@
 <html>
   <head>
     <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+
   </head>
   <body>
 <a-scene fog="type: exponential;  color: #18202B; density: 0.90">
@@ -14,15 +15,20 @@
       id="statue"
       src="assets/low-poly_statue/scene.gltf">
     </a-asset-item> 
-  
-    </a-assets>
+   
+ <audio
+  id="son"
+  src="./son1.mp3"
+  preload="auto"
+  autoplay>
+</audio>
 
-      ss
+</a-assets>
    
 
 <a-sky src="#sky" material="fog: false"></a-sky>
 
-  </html>
+
   
   
     <a-plane id="sol"     material="src: #texture-mur; repeat: 2 2" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="yellow"></a-plane>
@@ -48,7 +54,7 @@
     <a-entity light="type: point; color: red"></a-entity>
 <a-entity light="type: point; color: yellow" position="0.838 0 -2.64"></a-entity>
 <a-entity light="type: point; color: blue" position="1.143 0.81 -5.625"></a-entity>
-sd
+
   <a-entity
   id="camera-joueur"
   camera
@@ -61,13 +67,28 @@ sd
   
  <a-entity
   gltf-model="#statue"
-position="0.838 0 -2.64"ss
+position="0.838 0 -2.64"
   scale="0.05 0.05 0.05">
 </a-entity>     
      
-  
-  
-        
-  
-      </a-scene>
-    </body>
+<div id="audio">
+
+<button id="bouton">
+    SON ON
+  </button>
+
+  <p class="audio-text">
+    touche 's' départ immédiat, bouton délai 10s
+  </p>
+
+</div>
+  </a-scene>
+
+  <!-- CONTROLE AUDIO -->
+
+    <script src="https://ensaama-officiel-numerique.github.io/components/audio/audio-control.js"></script>
+
+
+
+</body>
+</html>
