@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+   
+  
+  
+    <a-scene>    
+        
+      <a-sky color="black"></a-sky>
+     
+     <a-entity light="type: ambient; color: #111122; intensity: 0.2"></a-entity>
+      <a-box 
+      position="2 0.4 0.4"
+      width="0.25" 
+      height="0.25" 
+      depth="0.25" 
+      material="shader: flat; color: #ffaa00"
+      light="type: point; color: #ffaa00; intensity: 4; distance: 8; decay: 2">
+      </a-box>
+      
+      
+      
+      <a-plane id="sol" 
+        geometry="primitive: plane" 
+        material="side: double; flat"
+        position="1.103 0.002 -0.745"        
+        scale="3 3 3"        
+        rotation="-90.01166961505233 90 0">
+      </a-plane>
+
+      <a-plane id="MurGauche" 
+        geometry="primitive: plane" 
+        material="side: double; flat"
+        position="1.111 0.481 0.744" 
+        scale="3.057 1 1" 
+        rotation="0 -180 -180.02333923010465" >
+      </a-plane>
+          
+       
+   
+
+      <a-entity
+        id="camera-joueur"
+        camera=""
+        position="1.2 1 -2"
+        rotation="-20 125 0"
+        wasd-controls="acceleration: 5"
+        look-controls>
+      </a-entity>
+   <a-box
+      id="ordi" 
+     position="-0.002 0.182 0.363"
+       scale="0.6 0.6 0.6">
+    </a-box>
+   
+    
+    <a-entity position="0.526 0.124 1.165" rotation="0 -90 -180" scale="3.057 1 1" geometry="primitive: plane"></a-entity>  
+    <a-entity position="2.603 0.493 -0.716" rotation="0 -90 -180" scale="3.057 1 1" geometry="primitive: plane"></a-entity>  
+      
+    
+    <a-entity light="intensity: 1.5; castShadow: true" 
+            position="0.602 1.83 -3.951" 
+            light.color="yellow"
+            data-aframe-default-light="" 
+            aframe-injected="">
+      </a-entity>
+
+      <a-light id="spotlight" type="spot"
+              position="0.575 2.683 -1.154" rotation="-90 0 0"
+              color="red" intensity="50"
+              angle="60" penumbra="0.5">
+        
+      </a-light>
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+     </a-scene>
+  </body>
+</html>
